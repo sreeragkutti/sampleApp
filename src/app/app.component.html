@@ -302,13 +302,15 @@
 <div>
   <div>
       <ul>
-        <li [class.selected]="currentMenu === menuone" (click)="onMenuClick('menuone')">menuone</li>
-        <li [class.selected]="currentMenu === menutwo" (click)="onMenuClick('menutwo')">menutwo</li>
-        <li [class.selected]="currentMenu === menuthree" (click)="onMenuClick('menuthree')">menuthree</li>
+        <li [class.selected]="currentMenu === menuone" (click)="onMenuClick('menuone')"
+        [routerLink]="['/menuone']" >menuone</li>
+        <li [class.selected]="currentMenu === menutwo" (click)="onMenuClick('menutwo')"
+        [routerLink]="['/menutwo']">menutwo</li>
+        <li [class.selected]="currentMenu === menuthree" (click)="onMenuClick('menuthree')"
+        [routerLink]="['/menuthree']">menuthree</li>
         </ul>
   </div>
   <div>
-
   </div>
 </div>
 
