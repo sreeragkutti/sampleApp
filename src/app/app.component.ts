@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sampleApp';
+  currentMenu = 'menuone'; // initial selected menu
+  menuone = 'menuone';
+  menutwo = 'menutwo';
+  menuthree = 'menuthree';
+
+  onMenuClick(menuName: string) {
+    console.log(menuName);
+    this.currentMenu = menuName;
+  }
 }
